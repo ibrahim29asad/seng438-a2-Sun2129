@@ -1,4 +1,4 @@
-# seng438-assignment-2
+# seng438-assignment2
 
 # Guidline
 
