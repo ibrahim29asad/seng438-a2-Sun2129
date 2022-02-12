@@ -42,20 +42,28 @@ Partition for a double array: An array with valid doubles, an array with a Doubl
 Range Class Tests:
 
 Method: contains(double value) 
+
 testValuePresentInRangeForMethodContains()
 Partitions Covered: Valid double
+
 testValueNotInRangeForMethodContains()
 Partitions Covered: Valid double
+
 testValueIsUpperBoundaryForMethodContains()
 Partitions Covered: Valid double
+
 testValueIsLowerBoundaryForMethodContains()
 Partitions Covered: Valid double
+
 testValueIsNaNForMethodContains()
 Partitions Covered: Double.NaN
+
 testLowestDoubleForMethodContains()
 Partitions Covered: Valid double
+
 testNegativeInfinityValueForMethodContains()
 Partitions Covered: Valid double
+
 testPositiveInfinityValueForMethodContains()
 Partitions Covered: Valid double
 
