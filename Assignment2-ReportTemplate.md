@@ -68,102 +68,142 @@ testPositiveInfinityValueForMethodContains()
 Partitions Covered: Valid double
 
 Method: constrain(double value) 
+
 testValueInTheRangeForMethodConstrain()
 Partitions Covered: Valid double
+
 testValueThatIsNaNForMethodConstrain()
 Partitions Covered: Double.NaN
+
 testUpperBoundNumberForMethodConstrain()
 Partitions Covered: Valid double
+
 testInfinityValueForMethodConstrain()
 Partitions Covered: Valid double
 
 Method: Shift(Range base, double delta) 
+
 testUpperBoundaryShiftWithDecimalForMethodShift() 
 Partitions Covered: Valid Double
+
 testLowerBoundaryShiftWithDecimalForMethodShift()
 Partitions Covered: Valid Double
+
 testUpperBoundaryShiftNoDecimalForMethodShift()
 Partitions Covered: Valid Double
+
 testLowerBoundaryShiftNoDecimalForMethodShift()
 Partitions Covered: Valid Double
+
 testNaNShiftForMethodShift()
 Partitions Covered: Double.NaN and Valid Range
+
 testPositiveInfinityForMethodShift()
 Partitions Covered: Double.NaN and Valid Range
+
 testRangeObjectWithNaNBoundaryForMethodShift() 
 Partition Covered: Range contains Double.NaN-Double.NaN range and Valid Double
+
 testNullRangeObjectForMethodShift()
 Partition Covered: Range contains Null to 10 and Valid Double
 
 Method: expandToInclude(Range range, double value)
+
 testValidDoubleValueForMethodExpandToInclude()
 Partition Covered: Valid Range and valid double 
+
 testDoubleNaNValueForMethodExpandToInclude()
 Partition Covered: Valid Range and Double.NaN double
+
 testNullRangeForMethodExpandToInclude()
 Partition Covered: Null Range and valid double
+
 testNaNRangeForMethodExpandToInclude()
 Partition Covered: Range containing a range of Double.NaN-Double.NaN and valid double.
 
 Method: combine(Range range1, Range range2) 
+
 testValidRangeInputForMethodCombine()
 Partitions Covered: Valid Range
+
 testSingleNullRangeInputForMethodCombine()
 Partitions Covered: Null range and Valid Range
+
 testTwoNullRangesInputForMethodCombine()
 Partitions Covered: Null range
+
 testSingleNaNInputForMethodCombine()
 Partitions Covered: Range containing Double.NaN
 
 Data Utilities Tests:
 
 Method: getCumulativePercentages(KeyedValues data)
+
 testAValidInputForMethodGetCumulativePercentages()
 Partitions Covered: Valid KeyedValues object
+
 testANullInputForMethodGetCumulativePercentages()
 Partitions Covered: Null KeyedValues object
+
 testADoubleNaNForMethodGetCumulativePercentages()
 Partitions Covered: KeyedValues object with Double.NaN 
 
 Method: calculateColumnTotal(Values2d data, int column, int[] validRows)
+
 testAValidInputForMethodCalculateColumnTotal()
 Partitions Covered: Valid Values2d object, valid integer, and valid integer array
+
 testNullValues2DObjectForMethodCalculateColumnTotal()
 Partitions Covered: Null Values2d object, valid integer, and valid integer array
+
 testForNaNInputForColumnForMethodCalculateColumnTotal()
 Partitions Covered: Valid Values2d object, integer typecasted Double.NaN, and valid integer array
+
 testForNullIntArrayForMethodCalculateColumnTotal()
 Partitions Covered: Valid Values2d object, valid integer, and null integer array
+
 testForNaNIntArrayForMethodCalculateColumnTotal()
 Partitions Covered: Valid Values2d object, valid integer, and integer array with typecasted Double.NaN
 
 Method: calculateRowTotal(Values2d data, int row)
+
 testAValidInputForMethodCalculateRowTotal()
 Partitions Covered: Valid Values2d object and valid integer
+
 testNullValues2DObjectForMethodCalculateRowTotal()
 Partitions Covered: Null values2d object and valid integer
+
 testForNaNInputForRowForMethodCalculateRowTotal()
 Partitions Covered: Valid Values2d object and integer typecasted Double.NaN
 
 Method: equal(double[][] a, double[][] b)
+
 testForTwoEqualArrayInputForMethodEqual()
 Valid 2d array a and valid 2d array b
+
 testForTwoDifferentArrayInputForMethodEqual()
 Valid 2d array a and valid 2d array b
+
 testForOneNullArrayInputForMethodEqual()
 Null 2d array a and valid 2d array b
+
 testForTwoNullArrayInputForMethodEqual()
 Null 2d array a and null 2d array b
+
 testForOneNaNArrayInputForMethodEqual()
 2d array a with Double.NaN as one value and valid 2d array b
+
 testForTwoNaNArrayInputForMethodEqual()
 2d array a with Double.NaN as one value and 2d array b with Double.NaN as one value
 
 Method: createNumberArray(double[] array)
+
 testForAValidArrayInputForMethodCreateNumberArray()
 Valid array
+
 testForANullArrayInputForMethodCreateNumberArray()
 Null array
+
 testForANaNArrayInputForMethodCreateNumberArray()
 Array with Double.NaN as a value
 
