@@ -135,8 +135,8 @@ Partitions Covered: Null range
 testSingleNaNInputForMethodCombine()
 Partitions Covered: Range containing Double.NaN
 
-**
-Data Utilities Tests:**
+
+**Data Utilities Tests:**
 
 Method: getCumulativePercentages(KeyedValues data)
 
