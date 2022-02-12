@@ -39,7 +39,7 @@ Partition for a double array: An array with valid doubles, an array with a Doubl
 
 # 3 Test cases developed
 
-Range Class Tests:
+**Range Class Tests:**
 
 Method: contains(double value) 
 
@@ -135,7 +135,8 @@ Partitions Covered: Null range
 testSingleNaNInputForMethodCombine()
 Partitions Covered: Range containing Double.NaN
 
-Data Utilities Tests:
+**
+Data Utilities Tests:**
 
 Method: getCumulativePercentages(KeyedValues data)
 
